@@ -1,0 +1,56 @@
+/* Reset */
+
+html, body, section, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Typography */
+
+body {
+  font-family: lucida grande;
+}
+
+h1 {
+  margin: 10px auto;
+}
+
+/* Game */
+
+#game-display{
+ width: 864px;
+ background: #262626;
+ margin: 20px auto;
+}
+
+#game-display:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  float: left;
+  color: white;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  border: solid #262626 1px;
+}
+
+.snake {
+  border: solid white 1px;
+  background: green;
+  border-radius: 10px;
+}
+
+
+
