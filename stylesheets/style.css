@@ -18,15 +18,20 @@ body {
 }
 
 h1 {
-  margin: 10px auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
 }
 
 /* Game */
 
 #game-display{
- width: 864px;
+ width: 540px;
  background: #262626;
  margin: 20px auto;
+ border: 10px gray solid;
+ border-radius: 5px;
 }
 
 #game-display:after {
@@ -41,16 +46,16 @@ ul {
 }
 
 li {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: solid #262626 1px;
 }
 
 .snake {
   border: solid white 1px;
-  background: green;
   border-radius: 10px;
 }
+
 
 
 
