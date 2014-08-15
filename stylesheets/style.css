@@ -27,7 +27,7 @@ h1 {
 /* Game */
 
 #game-display{
- width: 540px;
+ width: 567px;
  background: #262626;
  margin: 20px auto;
  border: 10px gray solid;
@@ -48,7 +48,7 @@ ul {
 li {
   width: 25px;
   height: 25px;
-  border: solid #262626 1px;
+  border: 1px solid #262626;
 }
 
 .snake {
