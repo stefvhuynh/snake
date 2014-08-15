@@ -24,6 +24,10 @@ h1 {
   margin: 20px;
 }
 
+li {
+  font-size: 10px;
+}
+
 /* Game */
 
 #game-display{
