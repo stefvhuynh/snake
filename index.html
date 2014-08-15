@@ -19,8 +19,12 @@
     <script>
       $(document).ready(function() {
         var snakeUI = new SnakeGame.SnakeUI('game-display');
-        snakeUI.start();
+        $('#game-display').on('click', function(event) {
+          snakeUI.start();
+        });
       });
     </script>
   </body>
 </html>
+
+
