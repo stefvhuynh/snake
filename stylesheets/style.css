@@ -58,7 +58,10 @@ li {
 .snake {
   border: solid white 1px;
   border-radius: 10px;
-  background: rgb(0, 140, 190);
+}
+
+.apple {
+  background: red;
 }
 
 
