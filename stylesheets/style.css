@@ -37,6 +37,10 @@ big {
   text-align: right;
 }
 
+#game-container #score {
+  color: green;
+}
+
 #game-display {
  width: 567px;
  background: #262626;
@@ -50,29 +54,25 @@ big {
   clear: both;
 }
 
-ul {
+#game-display ul {
   float: left;
   color: white;
 }
 
-li {
+#game-display ul li {
   width: 25px;
   height: 25px;
   border: 1px solid #262626;
 }
 
-.snake {
+#game-display ul .snake {
   border: solid white 1px;
   border-radius: 10px;
 }
 
-.apple {
+#game-display ul .apple {
   background: red;
   border-radius: 50px;
-}
-
-#score {
-  color: green;
 }
 
 
