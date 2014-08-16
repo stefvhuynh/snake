@@ -1,6 +1,6 @@
 /* Reset */
 
-html, body, section, ul, li, h1, big {
+html, body, section, ul, li, h1, big, figure, figcaption, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,6 +27,24 @@ h1 {
 
 big {
   font-size: 20px;
+  font-weight: 400;
+}
+
+button {
+  margin: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background-image: linear-gradient(#61b3fe, #0181f8);
+  color: white;
+  border: 3px solid #0174de;
+}
+
+button:hover {
+  background-image: linear-gradient(#7abffe, #2e9afe);
+}
+
+button:active {
+  background-image: linear-gradient(#0181f8, #61b3fe);
 }
 
 /* Game */
@@ -35,10 +53,30 @@ big {
   display: inline-block;
   margin: 0 auto;
   text-align: right;
+  position: relative;
 }
 
 #game-container #score {
   color: green;
+}
+
+#pause-screen {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 190px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  border: 10px solid #0174de;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#pause-screen figcaption {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 #game-display {
