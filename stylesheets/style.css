@@ -49,10 +49,6 @@ button:active {
 
 /* Game */
 
-.hide {
-  display: none;
-}
-
 #game-container {
   display: inline-block;
   margin: 0 auto;
@@ -64,23 +60,39 @@ button:active {
   color: green;
 }
 
-#pause-screen {
+.hide {
+  display: none;
+}
+
+.menu {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  top: 180px;
   padding: 20px;
-  width: 400px;
   text-align: center;
   border: 10px solid #0174de;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.8);
 }
 
-#pause-screen figcaption {
+#start-screen.menu {
+  top: 155px;
+  width: 225px;
+}
+
+#pause-screen.menu {
+  top: 180px;
+  width: 400px;
+}
+
+.menu figcaption {
   font-size: 30px;
   margin-bottom: 15px;
+}
+
+.menu button {
+  width: 140px;
 }
 
 #game-display {

@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.js" 
-      type="text/javascript"></script>
-    <script src="lib/coord.js" type="text/javascript"></script>
-    <script src="lib/snake.js" type="text/javascript"></script>
-    <script src="lib/board.js" type="text/javascript"></script>
-    <script src="lib/snakeUI.js" type="text/javascript"></script>
-    <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+    <script src='http://code.jquery.com/jquery-2.1.1.js' 
+      type='text/javascript'></script>
+    <script src='lib/snake.js' type='text/javascript'></script>
+    <script src='lib/board.js' type='text/javascript'></script>
+    <script src='lib/snakeUI.js' type='text/javascript'></script>
+    <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
 
     <h1>Snake</h1>
 
-    <section id="game-container">
-      <big id="score-container">Score: <span id="score">0</span></big>
-      <figure id="pause-screen" class="hide">
-        <figcaption>Game paused</figcaption>
-        <button id="resume-button">Resume game</button><br>
-        <button id="restart-button">Restart game</button>
+    <section id='game-container'>
+      <big id='score-container'>Score: <span id='score'>0</span></big>
+      
+      <figure id='start-screen' class='menu'>
+        <figcaption>Game Speed</figcaption>
+        <button id='slow-button'>Slow</button><br>
+        <button id='medium-button'>Medium</button><br>
+        <button id='fast-button'>Fast</button><br>
       </figure>
       
-      <section id="game-display"></section>
+      <figure id='pause-screen' class='menu hide'>
+        <figcaption>Game paused</figcaption>
+        <button id='resume-button'>Resume game</button><br>
+        <button id='restart-button'>Restart game</button>
+      </figure>
+      
+      <section id='game-display'></section>
     </section>
 
     <script>
       $(document).ready(function() {
         var snakeUI = new SnakeGame.SnakeUI('game-display');
         
-        $('#game-display').on('click', function(event) {
-          snakeUI.start();
+        $('#start-screen').on('click', 'button', function(event) {
+          switch(this.id) {
+            case 'slow-button':
+              snakeUI.start(300);
+              break;
+            case 'medium-button':
+              snakeUI.start(150);
+              break;
+            case 'fast-button':
+              snakeUI.start(80);
+              break;
+          }
+          
+          $(event.delegateTarget).addClass('hide');
         });
       });
     </script>
