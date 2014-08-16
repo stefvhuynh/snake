@@ -14,16 +14,18 @@
 
     <h1>Snake</h1>
 
-    <section id="game-display"></section>
+    <section id="game-container">
+      <big id="score-container">Score: <span id="score">0</span></big>
+      <section id="game-display"></section>
+    </section>
 
     <script>
       $(document).ready(function() {
         var snakeUI = new SnakeGame.SnakeUI('game-display');
+        
         $('#game-display').on('click', function(event) {
           snakeUI.start();
         });
-        
-        
       });
     </script>
   </body>

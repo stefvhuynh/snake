@@ -1,6 +1,6 @@
 /* Reset */
 
-html, body, section, ul, li, h1 {
+html, body, section, ul, li, h1, big {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,25 +15,31 @@ ul {
 
 body {
   font-family: lucida grande;
+  text-align: center;
+  padding: 15px;
 }
 
 h1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  margin: 20px;
 }
 
-li {
-  font-size: 10px;
+big {
+  font-size: 20px;
 }
 
 /* Game */
 
-#game-display{
+#game-container {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#game-display {
  width: 567px;
  background: #262626;
- margin: 20px auto;
  border: 10px gray solid;
  border-radius: 5px;
 }
@@ -63,6 +69,10 @@ li {
 .apple {
   background: red;
   border-radius: 50px;
+}
+
+#score {
+  color: green;
 }
 
 
