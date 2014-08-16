@@ -35,22 +35,6 @@
     <script>
       $(document).ready(function() {
         var snakeUI = new SnakeGame.SnakeUI('game-display');
-        
-        $('#start-screen').on('click', 'button', function(event) {
-          switch(this.id) {
-            case 'slow-button':
-              snakeUI.start(300);
-              break;
-            case 'medium-button':
-              snakeUI.start(150);
-              break;
-            case 'fast-button':
-              snakeUI.start(80);
-              break;
-          }
-          
-          $(event.delegateTarget).addClass('hide');
-        });
       });
     </script>
   </body>
