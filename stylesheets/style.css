@@ -1,6 +1,7 @@
 /* Reset */
 
-html, body, section, ul, li, h1, big, figure, figcaption, button {
+html, body, section, ul, li, h1, big, 
+figure, figcaption, button, p, small {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,8 +31,12 @@ big {
   font-weight: 400;
 }
 
+small {
+  font-size: 14px;
+}
+
 button {
-  margin: 10px;
+  margin: 15px;
   padding: 12px;
   border-radius: 10px;
   background-image: linear-gradient(#61b3fe, #0181f8);
@@ -77,12 +82,12 @@ button:active {
 }
 
 #start-screen.menu {
-  top: 155px;
+  top: 125px;
   width: 225px;
 }
 
 #pause-screen.menu {
-  top: 180px;
+  top: 170px;
   width: 400px;
 }
 
