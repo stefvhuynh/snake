@@ -56,7 +56,7 @@ button:active {
   position: relative;
 }
 
-#game-container #score {
+#game-container .score {
   color: green;
 }
 
@@ -83,6 +83,11 @@ button:active {
 
 #pause-screen.menu {
   top: 180px;
+  width: 400px;
+}
+
+#end-screen.menu {
+  top: 195px;
   width: 400px;
 }
 

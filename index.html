@@ -14,7 +14,7 @@
     <h1>Snake</h1>
 
     <section id='game-container'>
-      <big id='score-container'>Score: <span id='score'>0</span></big>
+      <big id='score-container'>Score: <span class='score'>0</span></big>
       
       <figure id='start-screen' class='menu'>
         <figcaption>Game Speed</figcaption>
@@ -25,8 +25,14 @@
       
       <figure id='pause-screen' class='menu hide'>
         <figcaption>Game paused</figcaption>
-        <button id='resume-button'>Resume game</button><br>
-        <button id='restart-button'>Restart game</button>
+        <button class='resume-button'>Resume game</button><br>
+        <button class='restart-button'>Restart game</button>
+      </figure>
+      
+      <figure id='end-screen', class='menu hide'>
+        <figcaption>Game over</figcaption>
+        <p>Your score: <span class='score'></span></p>
+        <button class='restart-button'>New game</button>
       </figure>
       
       <section id='game-display'></section>
